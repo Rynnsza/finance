@@ -1,0 +1,54 @@
+# Dependencies (re-installed in container)
+node_modules
+
+# Build output (rebuilt in container)
+dist
+dist-ssr
+
+# Version control
+.git
+.gitattributes
+
+# Environment (injected via build-args / runtime)
+.env
+.env.*
+!.env.example
+
+# IDE / Editor
+.vscode
+.idea
+*.sw?
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# CI / Deploy platforms
+.vercel
+.github
+
+# Documentation (not needed in image)
+docs
+*.md
+LICENSE
+
+# Supabase local dev
+supabase/.temp
+
+# Test artifacts
+coverage
+__screenshots__
+cypress
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# AI agent config
+CLAUDE.md
+GEMINI.md
+RPD.md

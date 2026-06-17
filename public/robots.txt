@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /transactions
+Disallow: /accounts
+Disallow: /budgets
+Disallow: /bills
+Disallow: /goals
+Disallow: /recurring
+Disallow: /categories
+Disallow: /settings
+Disallow: /activities
+
+Sitemap: https://seaavey.site/sitemap.xml

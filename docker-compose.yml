@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - VITE_PUBLIC_SUPABASE_URL=${VITE_PUBLIC_SUPABASE_URL}
+        - VITE_PUBLIC_SUPABASE_ANON_KEY=${VITE_PUBLIC_SUPABASE_ANON_KEY}
+        - VITE_PUBLIC_SITE_URL=${VITE_PUBLIC_SITE_URL}
+    container_name: aemy-finance
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
